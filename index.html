@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AJ's Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+     
+    body{
+      /*margin: 10%;*/
+      padding: 1%;
+      color: #00FF28;
+      background-color: black;
+      background: linear-gradient(#5E0B70, black);
+    }
+    hr{
+      border-color: #00FF28;
+    }
+    h1{
+     display: inline-block;
+    }
+    h1.contact{
+      
+      position: relative;
+      
+     float: right;
+    }
+    p{
+      line-height: 18px;
+      height: 54px;
+      overflow: hidden;
+    }
+    img.Projects{
+        margin: auto;
+      
+    }
+     img.Levels{
+        margin: auto;
+    }
+     img.Art{
+        margin: auto;
+    }
+      
+      
+      div.descriptions{
+            height: 100%;
+            width: 100%;
+            margin: auto;
+        }
+        
+        a:link{
+          background-color: none;
+          text-decoration: none;
+          padding: 50px, 60px;
+          float: right;
+        }
+        a:hover{
+          background-color: black;
+          color: #00FF28;
+        }
+    @media(min-width: 850px){
+        div.header{
+          margin: auto;
+          width: 700px;
+         
+      }
+    
+        div.gallery{
+            width: 700px;
+            /*height: 100%;*/
+            padding: 50px;
+            margin: auto;
+            color: black;
+            background-color: #00A811;  
+        }
+        
+        button.buttonLeft{
+            position: relative;
+            display:inline-block;
+            color: #00FF28;
+            background-color: black; 
+            width: 40%;
+            border: none;
+            top: 300px;
+            right: 0%;
+        }
+         button.buttonRight{
+            position: relative;
+            display:inline-block;
+            color: #00FF28;
+            background-color: black;
+            width: 40%;
+            border: none;
+            top: 300px;
+            left: 20%;
+        }
+      }
+        
+    @media(max-width: 850px){
+         div.header{
+          margin: auto;
+          width: 80%;
+      }
+        
+        div.gallery{
+            width: 80%;
+            height: 80%;
+            padding: 50px;
+            margin: auto;
+            color: black;
+            background-color: #00A811;  
+        }
+        
+        button.buttonLeft{
+            position: relative;
+            display:inline-block;
+            color: #00FF28;
+            background-color: black; 
+            width: 40%;
+            border: none;
+            top: 300px;
+            right: 0%;
+        }
+         button.buttonRight{
+            position: relative;
+            display:inline-block;
+            color: #00FF28;
+            background-color: black;
+            width: 40%;
+            border: none;
+            top: 300px;
+            left: 20%;
+        }
+    }
+   
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(e){
+        $('a').click(function() {
+          var p = $('a').prev('p')
+          var lineheight = parseInt(p.css('line-height'))
+          if(parseInt(p.css('height')) == lineheight*3){
+            p.css('height','auto');
+            $(this).text('Shrink')
+          }
+          else{
+            p.css('height',lineheight*3+'px');
+            $(this).text('Expand')
+          }
+        });
+    });
+  </script>
+  </head>
+<body>
+<div class="header">
+<h1>Andrew Dillon</h1>
+    <h1 class= "contact">
+    <a style="background-color: none;" href = "AndrewDillon_Resume.pdf" class="button1">Resume</a>
+    </h1>
+    <hr>
+</div>
+<div class="header">
+<h2>Projects (Use Arrows to scroll through)</h2>
+</div>
+<div style="position:relative" class="gallery">
+  
+    
+  
+    <img class="Projects" src="DontSpendTime.png" style="width: 75%">
+   
+    
+    
+    <div class="Projectdescriptions"style="width 100%">
+      <h4>Don't Spend Time On It</h4>
+      <h3>Main Role: 2D Artist and Designer</h3>
+      <p>Don't Spend Time On It is an award winning game in Hero Jam 2017, a 48 hour Game Jam competition for charity. I provide 2D pixel styled art assets and animations.<br><br>
+        
+        Things I learned from this Project: <br>
+            - 2D pixel animation <br>
+            - How to design and developm a game in a short amount of time<br>
+            - The importance of understanding a time frame and scope<br><br>
+        
+        
+      
+        <a href="https://drive.google.com/open?id=14nMpbF-4AlEQL8R-F1nW9npjjBF7tn7o">Download Build Here</a>
+       
+      </p>
+      
+        <a>Expand</a>
+      
+    </div>
+  
+    <img class="Projects" src="Quintessence.jpg" style="width: 25%">
+    <div class="Projectdescriptions"style="width 100%">
+      <h4>Quintessence</h4>
+      <h3>Main Role: UI Designer and 2D Artist</h3>
+      <p>Quintessence is an RPG with Card Game-based mechanics for interaction between characters. Quintessence was designed to create interesting npcs and dynamic interactions with those npcs relatively quickly. I've worked on this project as a UI/UX Designer and as a 2D Art Asset producer for two semesters.<br><br>
+        
+        Things I learned from this Project: <br>
+            - How to work on a larger team with specified rolls and leads to report to <br>
+            - How to design and implement a changing UI layout(See UI Design and Mockups Below)<br>
+            - Game Design for Collectible Card Games, more specifically worked on mechanics for a card game meant to represent both human interaction and personality where each round was a conversation that replaced simply choosing a response like in most RPGs<br><br>
+        
+        
+      
+        <a href="https://drive.google.com/open?id=0B1CX63DfGdmMaWpwQXJGV2U4NzA">Download Build Here</a>
+       
+      </p>
+      
+      <a>Expand</a>
+    </div>
+  
+    <img class="Projects" src="MirrorMirror.png" style="width: 15%">
+    <div class="Projectdescriptions"style="width 100%">
+    <h4>MirrorMirror</h4>
+        <p>MirrorMirror was designed as a mobile/webgl game. The project was made in about 5 weeks where I worked as Lead Designer and as level designer. You can play it here: <a href="https://jeannforbes.github.io/Slamdroid/">Play Here/</a></p>
+    <a>Expand</a>
+    </div>
+  
+    <img class="Projects" src="darkrai.png" style="width: 60%">
+    <div class="Projectdescriptions"style="width 100%">
+    <h4>Pokemon Dungeons and Dragons: The Darkest Hour</h4>
+    <p>Pokemon DnD is a Completed DnD module that you can play and start campaigns with that a team and I worked on for about 8 weeks. I worked specifically on ability design and balancing Advanced Class prerequisites and buffs. The Handbook can be found here: <a href ="https://docs.google.com/document/d/1prbzSQhKIMNyCwWN8QTnvTHD3iLOl863GTJta066KA0/edit?usp=sharing"> See Here</a></p>
+        
+    <a>Expand</a>
+    </div>
+  
+    
+    <img class="Projects" src="NullSector.jpg" style="width: 80%">
+    <div class="Projectdescriptions"style="width 100%">
+    <h4>Null Sector</h4>
+    <p>Null Sector is another Tabletop RPG System I worked on set in the distant future where America is ruled by an AI known as BINF. I wrote most of the lore and also wrote most of the book (proofread by my fellow authors). You can download it for free on Drivethru RPG: <a href="http://www.drivethrurpg.com/product/229217/Null-Sector">Download Here</a> </p>
+    <a>Expand</a>
+    </div>
+     <button style="positon:absolute;left:0;top:0;" class="buttonLeft" onclick="plusProjects(-1)">&#10094;&#10094;&#10094;</button>
+    <button style="positon:absolute;right:0;top:0;"class="buttonRight" onclick="plusProjects(1)">&#10095;&#10095;&#10095;</button>
+</div> 
+
+<br>
+<div class="header">
+    <h2>UI Designs and Mockups</h2>  
+</div>
+  
+<div class="gallery">
+    
+    <img class="UI/UX" src="Quintessence_GameField1.jpg" style="width: 100%">
+    <div class="UIdescriptions"style="width 100%" >
+    <h4>RolePlay CG, Project: Quintessence</h4>
+    <p>A major part of Quintessence is our card-game based system for creating characters and being able to create interesting role-playing scenarios using these cards by playing actions to trigger the other player's traits and change their three resoures: Morale, Appeal, and Safety. Forcing your opponent's resources to certain values change their mood and thus how they will interact with you for the rest of the game. Shown here is one of the field layouts for a very early build of the game that I designed.<br><br>
+      
+      <a href="https://docs.google.com/document/d/1k1vRzQmfP7IzV40NxlE-qH4RhXp5eQvdK_Od23zruyg/edit?usp=sharing"> Design Document for Quintessence CG can be found here</a><br>
+      *Created in Cooperation with Joel Tom, he did the writing, I did the mockups/pictures*
+      
+      <br><br>
+      
+    This design was based off of Yugioh's Duel Network, a card game system where the mechanics are present but aren't done automatically. We replicated the system to prototype mechanics on a digital platform.
+      
+      
+      
+   
+    </p>
+     <a>Expand</a>  
+      
+    </div>
+  
+    <img class="UI/UX" src="Quintessence_Tier1InteractionV3.png" style="width: 100%">
+    <div class="UIdescriptions"style="width 100%" >
+    <h4>Final UI Design</h4>
+    <p>This is the final layout for the Quintessence Card Game. The idea came about from wanting to have an ingame UI, and most of the story revolved around this book that held all of the information the player had collected, so we wanted the book to be an active UI element. Although we ran into problems of knowing whose cards were whose, I believe this was a good choice visually and could be learned.<br><br>
+      
+      <a href="https://drive.google.com/open?id=1w2zkSshRyXXqvAIdeP2ss6CtBZ_Nx58eO4bsU_oW8dY"> Design Document for Quintessence CG Tiers can be found here</a><br>
+      *Created in Cooperation with Joel Tom, he did the writing, I did the mockups/pictures*
+      
+      <br><br>
+   
+    </p>
+     <a>Expand</a>  
+      
+    </div>
+  
+    <img class="UI/UX" src="Cards.png" style="width: 100%">
+    <div class="UIdescriptions"style="width 100%">
+    <h4>Types of Cards, Project: Quintessence</h4>
+    <p>In Quintessence, there are Archtypes, Roles, traits, and a few different types of Action Cards that are categorized as General, Role-based, Location-based. Depending on the Location of an interaction, additional Action cards will be added to both players' decks. Other Action Cards are both the General Cards anyone can use, and Role-based cards that can only be used by specific roles. Everyone's traits and roles begin facedown, and part of the game is to determine the other opponent's traits and roles and play accordingly.<br> <br>
+      
+      Archetype Cards:<br>
+          - Acted as the players defining card, what their goal was in the overall narrative, also acted as their "ultimate ability" in game, Was not fully implemented.<br><br>
+      
+      Role Cards:<br>
+          - Defined what the player or character was in Society, could have up to two Role Cards.<br>
+          - Changed the Player's base resources at the beginning of the game based on the opponent's Role since Roles had different levels of Security, Morality, and Appeal to different Roles. This information is shown on the card.<br><br>
+      
+      Traits:<br>
+          - Started face down, and when certain conditions, or "Triggers", are met, are flipped face up and activate an effect.<br>
+          - Helped flesh out a character in the narrative through gameplay.<br><br>
+      
+      Action Cards:<br>
+          - Cards that made up the actual deck, since Archetype, Role, and Traits cards appear on the field at the beginning of the game.<br>
+          - Many action cards have requirments, such as having a certain amount of resources, to be playable.
+          - Action Cards normally changed either player's resources, but Utility Action Cards allowed you to search your own deck for specific cards or make other cards easier to play.<br>
+      
+      </p>
+      
+       <a>Expand</a> 
+    </div>
+  
+    <img class="UI/UX" src="Quintessence_StashFlowMockup2.png" style="width: 100%">
+    <div class="UIdescriptions"style="width 80%">
+    <h4>The Stash pt 1, Project: Quintessence</h4>
+    <p>One of the most unique mechanics in our game is the Stash. The Stash is a location where players are able store and access cards separate from their hand. The Stash allows the player to reserve up to three cards before an interaction that they think will be important to have later in a interaction and acts as a way to keep the player from hitting any roadblocks that slow gameplay. They are meant to represent a players prepared motivations for a coming encounter.<br> <br>
+      
+      <a href="https://docs.google.com/document/d/12RBWFrmlQhJNKutv31oVRUzzu-jVOrjLs5SiuabQZ1g/edit?usp=sharing">Design Document for the Stash can be found here</a><br>
+      *Created in Cooperation with Joel Tom, he did most of the writing, I did the mockups/pictures*
+      
+      <br><br>
+      </p>
+      
+       <a>Expand</a> 
+    </div>
+  
+    
+    <img class="UI/UX" src="Quintessence-StashMockupFlow2.png" style="width: 100%">
+    <div class="UIdescriptions"style="width 100%">
+    <h4>The Stash part 2, Project: Quintessence</h4> 
+    <p>Players can also add cards to the Stash during their Action Phase, where instead of playing an Action Card, they can put as many cards from their hand into their stash and then draw as many cards as they stashed, or whenever they need to discard cards due to hand limit, they can add to the Stash instead. Players may only have up to 5 cards in their stash at any given time.<br><br>
+      
+       <a href="https://docs.google.com/document/d/12RBWFrmlQhJNKutv31oVRUzzu-jVOrjLs5SiuabQZ1g/edit?usp=sharing">Design Document for the Stash can be found here</a><br>
+      *Created in Cooperation with Joel Tom, he did most of the writing, I did the mockups/pictures*
+      
+      
+      </p>
+       <a>Expand</a> 
+    </div>
+    <button style="positon:absolute;left:0;top:0;" class="buttonLeft" onclick="plusUI(-1)">&#10094;&#10094;&#10094;</button>
+    <button style="positon:absolute;right:0;top:0;"class="buttonRight" onclick="plusUI(1)">&#10095;&#10095;&#10095;</button>
+     
+</div>
+  
+<br>
+<div class="header">
+    <h2>Level Design</h2>
+</div>    
+<div class="gallery">
+    
+  
+    <img class="LevelDesign" src="Halo5MapConcept.jpg" style="width: 100%">
+    <div class="Leveldescriptions"style="width 100%">
+    <h4>Halo 5 Map: Ups and Downs</h4> 
+    <p>These are concept drawings for a Halo 5 map that I made using the Forge on Xbox One. It is meant for a 4v4 Slayer game type mode. Essentially I wanted to make a map that focused on verticallity and teams splitting up to get as many of the power weapons and buffs as possible. You can find a more in-depth analysis of the map with commentary by me here as I go several iterations:<br>
+        - <a href="https://youtu.be/R-lL-RmLhYc">Part 1</a><br>
+        - <a href="https://youtu.be/WiXVQNqVUTs">Part 2</a><br>
+        - <a href="https://youtu.be/UswI1sze0s4">Part 3 (Final)</a>
+      
+      
+      </p>
+      <a>Expand</a> 
+    </div>
+  
+    <img class="LevelDesign" src="MirrorMirrorDesign.png" style="width: 100%">
+    <div class="Leveldescriptions"style="width 100%">
+    <h4>Mirror Mirror' Evolution</h4> 
+    <p>Mirror Mirror originally began as a left to right endless runner. When we playtested, players weren't very satisfied with it, but they did however enjoy the Wall Jumping mechanic, so we changed up our design a bit. Instead of running Horizontally bashing through everything, Mirror Mirror became a Vertical avoid falling obstacle type of game, which can be shown through the difference of the Level Sketches. Also We planned to have a "Spider Boss" who would interrupt your climb, but we were never able to implement it due to time.<br><br>
+       <a href="https://jeannforbes.github.io/Slamdroid/">Link to Web Build here.</a>
+      
+      
+      </p>
+      
+      <a>Expand</a> 
+    </div>
+  
+    <img class="LevelDesign" src="DeadboltLevelLayout.jpg" style="width: 100%">
+    <div class="Leveldescriptions"style="width 100%">
+    <h4>Deadbolt: SHOW ME WHAT YOU GOT</h4> 
+    <p>Similarly to Halo 5, I made a level in Deadbolt. This here is my original layout design for the level. I also made video commentary walking through the different iterations of my level which you can find here: <br>
+        - <a href="https://youtu.be/hhOb_k5Ajec">Part 1</a>.</p>
+        - <a href="https://youtu.be/EHerxBNMvFU">Part 2 (Final)</a>
+      
+      <a>Expand</a> 
+    </div>
+  
+    <button style="positon:absolute;left:0;top:0;" class="buttonLeft" onclick="plusLevels(-1)">&#10094;&#10094;&#10094;</button>
+    <button style="positon:absolute;right:0;top:0;"class="buttonRight" onclick="plusLevels(1)">&#10095;&#10095;&#10095;</button>
+   
+</div>
+<div class="header">
+    <h2>Art and Drawing</h2>
+</div>    
+<div class="gallery">
+    
+    <img class="Art" src="Sten.gif" style="width: 100%">
+    <div class="Artdescriptions"style="width 100%">
+    <h4>Professor: Don't Spend Time On It</h4> 
+    <p>A quick animation I did for the professor of the game using Piskel.</p>
+    </div>
+  
+    <img class="Art" src="AbilityIcons.jpg" style="width: 100%">
+    <div class="Artdescriptions"style="width 100%">
+    <h4>Ability Icons, Project: Quintessence</h4> 
+    <p>These are some of the Ability Icons I made for Quintessence. Created in Photoshop </p>
+    </div>
+  
+    <img class="Art" src="SolemnPaiv4.jpg" style="width: 80%">
+    <div class="Artdescriptions"style="width 100%">
+    <h4>Pai Aodh</h4> 
+    <p>Character Icon of my DnD character. Created in Paint Tool Sai and Photoshop</p>
+    </div>
+  
+    <img class="Art" src="MidnaMVP.jpg" style="width: 70%">
+    <div class="Artdescriptions"style="width 100%">
+    <h4>Midna</h4> 
+    <p>This is a character I designed for a friend's RPG. Made in Photoshop</p>
+    </div>
+    <button style="positon:absolute;left:0;top:0;" class="buttonLeft" onclick="plusArt(-1)">&#10094;&#10094;&#10094;</button>
+    <button style="positon:absolute;right:0;top:0;"class="buttonRight" onclick="plusArt(1)">&#10095;&#10095;&#10095;</button>
+</div>
+<script>
+var UIIndex = 1;
+var ProjectIndex = 1;
+var LevelIndex = 1;
+var ArtIndex = 1;
+
+showUI(UIIndex);
+showProjects(ProjectIndex);
+showLevels(LevelIndex);
+showArt(ArtIndex);
+  
+function plusProjects(n){
+    showProjects(ProjectIndex += n);
+  }
+function plusUI(n) {
+  showUI(UIIndex += n);
+}
+function plusLevels(n){
+    showLevels(LevelIndex += n);
+}
+function plusArt(n){
+    showArt(ArtIndex += n);
+}
+  
+function showUI(n) {
+  var i;
+  var x = document.getElementsByClassName("UI/UX");
+  var y = document.getElementsByClassName("UIdescriptions");
+  
+  if (n > x.length) {UIIndex = 1}    
+  if (n < 1) {UIIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none"; 
+     y[i].style.display = "none";
+  }
+  x[UIIndex-1].style.display = "block";  
+  y[UIIndex-1].style.display = "block";
+}
+  
+function showProjects(n) {
+  var i;
+  var x = document.getElementsByClassName("Projects");
+  var y = document.getElementsByClassName("Projectdescriptions");
+  
+  if (n > x.length) {ProjectIndex = 1}    
+  if (n < 1) {ProjectIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none"; 
+     y[i].style.display = "none";
+  }
+  x[ProjectIndex-1].style.display = "block";  
+  y[ProjectIndex-1].style.display = "block";
+}
+  
+function showLevels(n) {
+  var i;
+  var x = document.getElementsByClassName("LevelDesign");
+  var y = document.getElementsByClassName("Leveldescriptions");
+  
+  if (n > x.length) {LevelIndex = 1}    
+  if (n < 1) {LevelIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none"; 
+     y[i].style.display = "none";
+  }
+  x[LevelIndex-1].style.display = "block";  
+  y[LevelIndex-1].style.display = "block";
+}
+  
+function showArt(n) {
+  var i;
+  var x = document.getElementsByClassName("Art");
+  var y = document.getElementsByClassName("Artdescriptions");
+  
+  if (n > x.length) {ArtIndex = 1}    
+  if (n < 1) {ArtIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none"; 
+     y[i].style.display = "none";
+  }
+  x[ArtIndex-1].style.display = "block";  
+  y[ArtIndex-1].style.display = "block";
+}
+  
+</script>
+
+</body>
+</html>
